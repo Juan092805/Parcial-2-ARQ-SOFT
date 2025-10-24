@@ -7,7 +7,7 @@ app = Flask(__name__)
 def calcular_factorial(num):
     factorial = math.factorial(num)
     
-    etiqueta = "par" if factorial % 2 == 0 else "impar"
+    etiqueta = "par" if num % 2 == 0 else "impar"
     
     return jsonify({
         "numero_recibido": num,
